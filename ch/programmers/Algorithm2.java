@@ -1,4 +1,4 @@
-package ch.alg;
+package ch.programmers;
 
 import java.util.ArrayList;
 import java.util.List;
