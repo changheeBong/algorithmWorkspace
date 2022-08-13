@@ -10,23 +10,25 @@ import java.util.Scanner;
 public class Algorithm12 {
 
     public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        String arr[] = str.split("\\-");
+        int result = 0;
+        for(int i = 0; i < arr.length; i++) {
+            int temp = 0;
+            String[] subString = arr[i].split("\\+");
 
-        Scanner sc = new Scanner(System.in);
-//        String word = sc.nextLine();
-        String word = "55-50+40";
-        String[] string = new String[word.length()];
-        int chk = 0;
-        for(int i = 0; i < word.length(); i ++){
-            String temp = word.charAt(i)+"";
-
-            if(temp.equals("+") || temp.equals("-")){
-                string[chk] = temp;
-                chk++;
+            for(String s : subString){
+                temp += Integer.parseInt(s);
+            }
+            if(i == 0){
+                result += temp;
+            }else{
+                result -= temp;
             }
 
-
         }
-        for(String i : string)
-        System.out.println("string[] = " + i);
+
+        System.out.println(result);
     }
 }
