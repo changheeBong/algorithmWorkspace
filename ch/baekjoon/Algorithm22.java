@@ -39,6 +39,7 @@ public class Algorithm22 {
                     result++;
                 }
             }
+            
 
         }
 
