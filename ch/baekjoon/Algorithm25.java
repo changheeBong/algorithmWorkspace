@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /*
-백준 11659 한수
+백준 11659 구간 합 구하기 4
  */
 public class Algorithm25 {
 
