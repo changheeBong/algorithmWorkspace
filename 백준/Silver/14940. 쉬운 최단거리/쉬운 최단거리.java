@@ -60,12 +60,15 @@ public class Main {
             }
 
         }
+        StringBuilder sb = new StringBuilder();
         for(int i = 0; i< N; i++){
             for(int j = 0 ; j< M ; j++){
-                System.out.print(result[i][j] + " ");
+                sb.append(result[i][j] + " ");
+
             }
-            System.out.println();
+            sb.append("\n");
         }
+        System.out.println(sb);
 
     }
 }
