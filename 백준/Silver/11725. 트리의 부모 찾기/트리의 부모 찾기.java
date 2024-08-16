@@ -31,9 +31,11 @@ public class Main {
         }
         DFS(1);
 
+        StringBuilder sb = new StringBuilder();
         for(int i = 2; i< parent.length; i++){
-            System.out.println(parent[i]);
+            sb.append(parent[i] + "\n");
         }
+        System.out.println(sb);
     }
 
     static void DFS(int x){
